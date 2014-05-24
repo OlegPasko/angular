@@ -20,3 +20,4 @@ pickle-email-*.html
 .DS_Store
 /db/schema.rb
 .directory
+.idea/workspace.xml
