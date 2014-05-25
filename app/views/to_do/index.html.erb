@@ -1,0 +1,16 @@
+<div ng-controller="ToDoController as ToDo">
+    <h1>ToDo#index</h1>
+
+
+    <form ng-submit="ToDo.addEntry()">
+      <input type="text" ng-model="ToDo.newEntry.name">
+      <input type="submit" value="Add"/>
+    </form>
+
+    <ul>
+        <li ng-repeat="entry in ToDo.entries">
+            {{entry.name}}
+        </li>
+    </ul>
+    <b>{{ToDo.newEntry.name}}</b>
+</div>

@@ -21,3 +21,5 @@ pickle-email-*.html
 /db/schema.rb
 .directory
 .idea/workspace.xml
+
+.idea/misc.xml

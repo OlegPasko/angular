@@ -10,7 +10,24 @@
 // Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require jquery
-//= require jquery_ujs
-//= require turbolinks
+//= require angular
 //= require_tree .
+
+
+(function(){
+    var entries = [{
+            name: 'Шота 1'
+        },
+        {
+            name: 'Шота еще!'
+        }
+    ];
+    var app = angular.module('ToDo', []);
+    app.controller('ToDoController', function() {
+        this.entries = entries;
+        this.addEntry = function() {
+            this.entries.push(this.newEntry);
+            this.newEntry = {};
+        }
+    });
+})();
